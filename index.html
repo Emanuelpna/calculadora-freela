@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Horas de Freela</title>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 px-6">
+    <h1>Calculadora de Freela</h1>
+    <main class="container mx-auto my-32 rounded shadow p-12 bg-white flex">
+      <form id="calculator" class="w-1/2">
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2"
+          for="expectedAmount"
+          >Quanto você deseja receber por este projeto?</label
+        >
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+          type="text"
+          name="expectedAmount"
+          id="expectedAmount"
+        />
+
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2 mt-10"
+          for="dailyHours"
+          >Quantas horas você irá trabalhar nesse projeto por dia?</label
+        >
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+          type="text"
+          name="dailyHours"
+          id="dailyHours"
+        />
+
+        <label
+          class="block text-gray-700 text-sm font-bold mb-2 mt-10"
+          for="daysToFinish"
+          >Em quantos dias você espera terminar esse projeto?</label
+        >
+        <input
+          class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+          type="text"
+          name="daysToFinish"
+          id="daysToFinish"
+        />
+
+        <button
+          type="submit"
+          class="rounded w-full py-4 px-6 text-lg text-white bg-purple-600 mt-8"
+        >
+          Calcular Hora
+        </button>
+      </form>
+      <section class="w-1/2">
+        <div
+          id="hourPrice"
+          class="text-3xl text-white bg-blue-600 leading-none m-20 rounded p-12 text-center"
+        >
+          <span class="text-xl">Preencha os dados ao lado antes de continuar</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="./calculadora.js"></script>
+  </body>
+</html>
