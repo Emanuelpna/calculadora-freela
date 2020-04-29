@@ -11,9 +11,11 @@
     />
   </head>
   <body class="bg-gray-100 px-6">
-    <h1>Calculadora de Freela</h1>
-    <main class="container mx-auto my-32 rounded shadow p-12 bg-white flex">
-      <form id="calculator" class="w-1/2">
+    <h1 class="text-5xl text-center font-bold text-gray-700 mt-12">
+      Calculadora de Freela
+    </h1>
+    <main class="container mx-auto my-20 rounded shadow p-12 bg-white flex flex-wrap">
+      <form id="calculator" class="md:w-1/2 w-full">
         <label
           class="block text-gray-700 text-sm font-bold mb-2"
           for="expectedAmount"
@@ -57,12 +59,14 @@
           Calcular Hora
         </button>
       </form>
-      <section class="w-1/2">
+      <section class="md:w-1/2 w-full">
         <div
           id="hourPrice"
-          class="text-3xl text-white bg-blue-600 leading-none m-20 rounded p-12 text-center"
+          class="text-3xl text-white bg-blue-600 leading-none md:m-20 m-4 md:mt-20 mt-10 rounded p-12 text-center"
         >
-          <span class="text-xl">Preencha os dados ao lado antes de continuar</span>
+          <span class="text-xl"
+            >Preencha os dados ao lado antes de continuar</span
+          >
         </div>
       </section>
     </main>
